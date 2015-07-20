@@ -4,7 +4,7 @@ Scripts for detecting scarp-like features in airborne laser swath mapping (ALSM)
 #### Installation and usage
 Nothing special. These scripts work under recent versions of MATLAB; R2012a+ should do the trick. GNU Octave's fft behaves differently by default and will give unexpected results (i.e., the full imaginary value of the FT).
 
-To run these scripts on new data, get a copy of your DEM in ESRI ASCII format and import it using the dem2mat utility. Convert results back to ESRI/GDAL-friendly format with mat2dem, or plot with plot_scarplet. A generic whitening utility is also included. 
+To run these scripts on new data, get a copy of your DEM in ESRI ASCII format and import it using the dem2mat utility. Convert results back to ESRI/GDAL-friendly format with mat2dem, or plot with plotscarplet. A generic whitening utility is also included. 
 
 
 #### Examples
