@@ -1,4 +1,4 @@
-function [dem] = dem2mat(filename)
+function dem = dem2mat(filename)
 
 %% Load ESRI ASCII DEM as MATLAB structure
 %% Robert Sare 2014

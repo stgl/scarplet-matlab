@@ -1,4 +1,4 @@
-function [noisedem, nanidx] = noisedem(dem, sig2 = sqrt(eps))
+function [noisedem, nanidx] = noisedem(dem, sig2)
 
 %% Whitens DEM with Gaussian noise around mean value
 %% Robert Sare 2014
@@ -8,6 +8,10 @@ function [noisedem, nanidx] = noisedem(dem, sig2 = sqrt(eps))
 %% OUTPUT:      noisedem - whitened DEM
 %%              nanidx - linear indices of NaN values, useful for
 %%                       post-processing
+
+if nargin < 2
+    sig2 = sqrt(eps);
+end
 
 tot = sum(nansum(dem.grid));
 num = sum(sum(~isnan(dem.grid)));
