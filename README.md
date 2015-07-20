@@ -6,7 +6,6 @@ Nothing special. These scripts work under recent versions of MATLAB; R2012a shou
 
 To run these scripts on new data, get a copy of your DEM in ESRI ASCII format and import it using the dem2mat utility. Convert results back to ESRI/GDAL-friendly format with mat2dem, or plot with plot_scarplet. A generic whitening utility is also included. 
 
-Inefficiency guaranteed. Moderate-size DEMs (~1 million grid points) will take a few hours to filter. Large DEMs, or multiple passes over a single DEM, will take days.
 
 #### Examples
 The examples directory contains two examples of filtering synthetic DEMs and one application to real-world data from the Carrizo Plain, California, USA. 
@@ -21,4 +20,5 @@ Please cite this paper if you use these scripts in published work.
 Questions? Comments? Complaints?
 
 Robert Sare [rmsare@stanford.edu](mailto:rmsare@NOSPAMstanford.edu)
+
 [STGL](https://pangea.stanford.edu/researchgroups/tectonicgeomorph/)
