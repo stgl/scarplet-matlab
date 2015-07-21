@@ -1,30 +1,32 @@
-% synthetic vertical scarp
+% synthetic vertical scarp with orthogonal channels
 % Robert Sare June 2015
 
-function [A, KT, ANG, SNR, dem] = synthetic1()
+function [A, KT, ANG, SNR, dem] = synthetic2()
 
 addpath('../', '../util')
 
 % Create scarp
 theta = pi/2;
-x = -200:2:200;
-y = -800:2:800;
+x = -500:2:500;
+y = -500:2:500;
 
 de = 2;
 frac = 0.9;
-len = 1600;
-kt = 10^1;
+len = 500;
+kt = 10^2.5;
 b = 0;
 
 [C, U] = calcu_scarp(x, y, len, theta, kt, b, de);
 
+% Add channels
+
 % Populate scarp dem struct
 dem = struct('nx', 0, 'ny', 0, 'xllcenter', 0, 'yllcenter', 0, 'de', 0, 'grid', [], 'nodata', NaN);
 
-dem.nx = length(x);
-dem.ny = length(y);
+dem.nx = length(U(1,:));
+dem.ny = length(U(:,1));
 dem.xllcenter = 0;
-dem.yllcenter = 0;
+dem.yxllcenter = 0;
 dem.de = de;
 dem.grid = U;
 
@@ -48,7 +50,7 @@ idx = find((Xrot < -(d+de/2)) | (Xrot > (d+de/2)));
 
 U = -calcu_1d(Yrot, kt, b);
 
-U = U + sqrt(eps).*randn(length(y), length(x));
+U = U + 0.1.*randn(length(y), length(x));
 
 C = del2(U, de);
 
