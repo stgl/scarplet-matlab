@@ -12,7 +12,7 @@ The examples directory contains two examples of filtering synthetic DEMs and one
 
 #### References
 For details, see:  
-Hilley, G. E., DeLong, S., Prentice, C., Blisniuk, K., and Arrowsmith, J. R., 2010, Morphologic dating of fault scarps using airborne laser swath mapping (ALSM) data, Geophys. Res. Lett., 37, L04301, doi:[10.1029/2009GL042044](http://dx.doi.org/10.1029/2009GL042044).
+Hilley, G. E., DeLong, S., Prentice, C., Blisniuk, K., and Arrowsmith, J. R., 2010, Morphologic dating of fault scarps using airborne laser swath mapping (ALSM) data, Geophysical Research Letters, 37, L04301, doi:[10.1029/2009GL042044](http://dx.doi.org/10.1029/2009GL042044).
 
 Please cite this paper if you use these scripts in published work.
 
