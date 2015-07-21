@@ -4,7 +4,7 @@ function c = calcprofcurv(dem,de,gam)
 %% George Hilley 2010
 %% Minor revisions Robert Sare June 2015
 %%
-%% INPUTS:      dem - elevation grid (not grid struct) 
+%% INPUT:      dem - elevation grid (not grid struct) 
 %%              de - dem spacing
 %%              gam - template orientation
 %%
