@@ -2,7 +2,7 @@ function [] = plotscarplet(dem, param)
 
 %% Plot hillshade and parameter overlay
 %% Robert Sare 2014
-%% Incorporates code written to produce figures in Hilley, et al., 2010 GRL
+%% Adapted from code written to produce figures in Hilley, et al., 2010 GRL
 %% paper
 %%
 %% INPUT:       dem - dem in matlab grid struct
@@ -19,8 +19,8 @@ cmap = jet(254);
 cmap = [1 1 1; cmap];
 hsv_cmap = rgb2hsv(cmap);
 
-pmin = nanmin(param.grid);
-pmax = nanmax(param.grid);
+pmin = nanmin(param.grid(:));
+pmax = nanmax(param.grid(:));
 
 % Rescale to colormap
 colorgrid = (param.grid - pmin)./(pmax - pmin);
