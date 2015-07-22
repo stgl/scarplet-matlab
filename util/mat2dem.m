@@ -20,7 +20,7 @@ fprintf(fid, 'nodata_value %10.3f\n', dem.nodata);
 idx = find(isnan(dem.grid));
 dem.grid(idx) = dem.nodata;
 
-for(i = dem.ny:-1:1)
+for(i = 1:1:dem.ny)
     fprintf(fid, '%10.3f', dem.grid(i,:));
     fprintf(fid, '\n');
 end
