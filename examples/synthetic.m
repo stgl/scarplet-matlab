@@ -1,5 +1,6 @@
 % synthetic vertical scarp
 % Robert Sare June 2015
+% adapated from example in Hilley, et al., 2010, GRL
 
 function [A, KT, ANG, SNR, dem] = synthetic1()
 
@@ -33,6 +34,9 @@ d = 200;
 [A, KT, ANG, SNR] = wavelet_filtertile(dem, d);
 
 % Plot and export results
+mask = SNR >= mean(mean(SNR));
+
+
 
 % -----------------------------------------------------------------------------
 % Internal functions
