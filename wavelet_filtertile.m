@@ -1,4 +1,4 @@
-function [bestA, bestKT, bestANG, bestSNR] = wavelet_filtertile(dem)
+function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d)
 
 %% Applies wavelet filter to DEM, returning best-fit parameters at each grid
 %% point 
@@ -15,7 +15,10 @@ function [bestA, bestKT, bestANG, bestSNR] = wavelet_filtertile(dem)
 % Scarp-face fraction, noise level, template length 
 frac = 0.9;
 sig = 0.1;
-d = 200;
+
+if nargin < 2
+    d = 200;
+end
 
 % Grid search over orientation and ages
 l = -2.5:0.1:2.5;
@@ -24,6 +27,7 @@ k = 0:0.1:2.5;
 ANG = (pi./2 - atan2(K,L)) .* 180./pi;
 LOGKT = sqrt(L.^2 + K.^2);
 
+de = 2;
 M = dem.grid;
 bestSNR = zeros(size(M));
 bestA = zeros(size(M));
@@ -48,8 +52,17 @@ for(i=1:length(LOGKT(:,1)))
         bestSNR = (bestSNR < thisSNR).*thisSNR + (bestSNR >= thisSNR).*bestSNR;
        
         % Progress report
-        fprintf('%6.2f\%\n',((length(LOGKT(1,:))*(i-1) + j)./(prod(size(LOGKT)))*100));
+        fprintf('%6.2f%%\n',((length(LOGKT(1,:))*(i-1) + j)./(prod(size(LOGKT)))*100));
         
     end
 end
 
+A = dem;
+KT = dem;
+ANG = dem;
+SNR = dem;
+
+A.grid = bestA;
+KT.grid = bestKT;
+ANG.grid = bestANG;
+SNR.grid = bestSNR;
