@@ -2,7 +2,8 @@
 % Robert Sare June 2015
 
 % Import DEM -- Carrizo Plain, 2m resolution
-dem = dem2mat('carrizo.asc');
+%dem = dem2mat('carrizo.asc');
+load('CarrizoDEM.mat');
 
 % Filter DEM at 200m template length
 d = 200;
