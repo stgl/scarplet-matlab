@@ -23,7 +23,7 @@ end
 noisegrid = randn(dem.ny,dem.nx)*sig2 + meanval;
 
 idx = find(isnan(dem.grid));
-fprintf('DEM contains %i NaNs, (%i %%)', length(idx),
+fprintf('DEM contains %i NaNs, (%i %%)\n', length(idx),
 length(idx)/prod(size(dem.grid))*100);
 dem.grid(idx) = noisegrid(idx);
 
