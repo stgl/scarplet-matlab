@@ -31,8 +31,8 @@ colorgrid(colorgrid > 1) = 0;
 x = (param.xllcenter+param.de./2):param.de:((param.nx).*param.de + (param.xllcenter-param.de./2));
 y = (param.yllcenter+param.de./2):param.de:((param.ny).*param.de + (param.yllcenter-param.de./2));
 
-colorimage(:, :, 1) = reshape(hsv_cmap(round(C.*254)+1, 1), param.ny, param.nx);
-colorimage(:, :, 2) = reshape(hsv_cmap(round(C.*254)+1, 2), param.ny, param.nx);
+colorimage(:, :, 1) = reshape(hsv_cmap(round(colorgrid.*254)+1, 1), param.ny, param.nx);
+colorimage(:, :, 2) = reshape(hsv_cmap(round(colorgrid.*254)+1, 2), param.ny, param.nx);
 colorimage(:, :, 3) = I;
 
 colorimage = hsv2rgb(colorimage);
