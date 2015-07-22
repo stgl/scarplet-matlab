@@ -8,4 +8,6 @@ This example uses a simple vertical fault scarp with morphologic age 10<sup>1</s
 This synthetic scarp is cut by uniformly-spaced channels. The wavelet filter identifies both the scarp and "fluvial" channel walls as landforms produced by diffusion down steep slopes.
 
 #### Carrizo Plain, USA
-Original data collected by the [B4 Project](http://siovizcenter.ucsd.edu/topo/b4.php), accessed through [OpenTopography](http://www.opentopography.org/). 
+Original data collected by the [B4 Project](http://siovizcenter.ucsd.edu/topo/b4.php), accessed through [OpenTopography](http://www.opentopography.org/).
+
+In this oriented swath, the San Andreas Fault appears as a continuous fault scarp cross-cut by channels coming off of high topography in the northeast. The wavelet filter identifies this scarp as a high signal-to-noise feature with an approximate morphologic age of 10<sup>2.5</sup> m<sup>2</sup>. Channels are also clearly resolved.
