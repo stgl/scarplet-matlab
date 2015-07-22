@@ -6,7 +6,6 @@ Nothing special. These scripts work under recent versions of MATLAB; R2012a+ sho
 
 To run these scripts on new data, get a copy of your DEM in ESRI ASCII format and import it using the dem2mat utility. Convert results back to ESRI/GDAL-friendly format with mat2dem, or plot with plotscarplet. A generic whitening utility is also included. 
 
-
 #### Examples
 The examples directory contains two examples of filtering synthetic DEMs and one application to real-world data from the Carrizo Plain, California, USA. 
 
