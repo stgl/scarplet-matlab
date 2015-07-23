@@ -45,7 +45,7 @@ for(i=1:length(LOGKT(:,1)))
         k = find(isnan(thisSNR));
         thisSNR(k) = 0;
         
-        % Retain parameters with minimum misfit 
+        % Retain parameters with minimum SNR 
         bestA = (bestSNR < thisSNR).*thisA + (bestSNR >= thisSNR).*bestA;
         bestKT = (bestSNR < thisSNR).*thiskt + (bestSNR >= thisSNR).*bestKT;
         bestANG = (bestSNR < thisSNR).*thisang + (bestSNR >= thisSNR).*bestANG;
