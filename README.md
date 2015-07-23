@@ -9,7 +9,7 @@ To run these scripts on new data, get a copy of your DEM in ESRI ASCII grid form
 You can plot filter output over a hillshade with `plotscarplet` if you compute slope magnitudes and azimuths for your DEM. A generic whitening utility is also included to add noise to DEMs with areas of missing data. 
 
 #### Examples
-The examples directory contains an example of filtering a synthetic DEM and one application to real-world data from the Carrizo Plain, California, USA. 
+The examples directory contains an example of filtering a synthetic DEM and an application to real-world data from the Carrizo Plain, California, USA. 
 
 #### References
 For details, see:  
