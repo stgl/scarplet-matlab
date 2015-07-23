@@ -27,9 +27,9 @@ dem.yllcenter = C{2}(4);
 
 % Load DEM grid
 ndv = C{2}(6);
-%dem.nodata = ndv; % retain NDVs; useful for ESRI compatibility
-dem.grid(dem.grid==ndv) = NaN; % set NaNs; useful for matlab processing
 dem.grid = fscanf(fid,'%f',[dem.nx,dem.ny]);
 dem.grid = (dem.grid')
+%dem.nodata = ndv; % retain NDVs; useful for ESRI compatibility
+dem.grid(dem.grid==ndv) = NaN; % set NaNs; useful for matlab processing
 
 end
