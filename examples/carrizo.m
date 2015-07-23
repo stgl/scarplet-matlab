@@ -15,7 +15,7 @@ plotscarplet(dem, KT);
 
 % Simple mask by SNR
 mask = (SNR.grid >= mean(SNR.grid(:)));
-KT.grid = log(KT.grid);
+KT.grid = log10(KT.grid);
 KT.grid(~mask) = nan;
 
 plotscarplet(dem, KT);

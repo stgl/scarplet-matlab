@@ -33,10 +33,12 @@ dem.grid = U;
 d = 200;
 [A, KT, ANG, SNR] = wavelet_filtertile(dem, d);
 
-% Plot and export results
+% Mask and export results
 mask = SNR >= mean(mean(SNR));
+KT.grid = log10(KT.grid);
+KT.grid(~mask) = nan;
 
-
+mat2dem(KT, 'synthetic_logkt_200m.asc');
 
 % -----------------------------------------------------------------------------
 % Internal functions
