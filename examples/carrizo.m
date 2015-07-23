@@ -1,6 +1,8 @@
 % wavelet analysis of Carrizo Plain DEM
 % Robert Sare June 2015
 
+addpath('..', '../util');
+
 % Import DEM -- Carrizo Plain, 2m resolution
 %dem = dem2mat('carrizo.asc');
 load('CarrizoDEM.mat');

@@ -53,3 +53,5 @@ SNR = (A.^2 .* sumW2) ./ err;
 i = find( (X < (min(x)+anx)) | (X > (max(x)-anx)) | (Y < (min(y) + any)) | (Y > (max(y)-any)));
 SNR(i) = nan;
 A(i) = nan;
+
+end

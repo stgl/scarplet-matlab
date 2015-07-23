@@ -63,3 +63,7 @@ colormap gray
 imagesc(x,y,I,[27 216]);
 
 I = I./255;
+
+end
+
+end

@@ -2,8 +2,6 @@
 % Robert Sare June 2015
 % adapated from example in Hilley, et al., 2010, GRL
 
-function [A, KT, ANG, SNR, dem] = synthetic1()
-
 addpath('../', '../util')
 
 % Create scarp

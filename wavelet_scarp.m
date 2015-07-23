@@ -42,3 +42,5 @@ x1 = d.*cos(alph);
 y1 = d.*sin(alph);
 any = abs((x4 - x1) + 2.*c.*cos(alph-pi./2));
 anx = abs((y1 - y4) + 2.*c.*sin(alph-pi./2));
+
+end

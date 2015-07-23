@@ -26,3 +26,5 @@ for(i = 1:1:dem.ny)
 end
 
 fclose(fid);
+
+end

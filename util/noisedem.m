@@ -28,3 +28,5 @@ dem.grid(idx) = noisegrid(idx);
 
 noisedem = dem;
 nanidx = idx;
+i
+end
