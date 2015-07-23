@@ -22,4 +22,4 @@ plotscarplet(dem, KT);
 
 % Save as ESRI ASCII files
 mat2dem(SNR, 'carrizo_SNR_200m.asc');
-mat2dem(KT, 'carrizo_kt_200m.asc');
+mat2dem(KT, 'carrizo_logkt_200m.asc');
