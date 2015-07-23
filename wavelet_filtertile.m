@@ -27,7 +27,7 @@ k = 0:0.1:2.5;
 ANG = (pi./2 - atan2(K,L)) .* 180./pi;
 LOGKT = sqrt(L.^2 + K.^2);
 
-de = 2;
+de = dem.de;
 M = dem.grid;
 bestSNR = zeros(size(M));
 bestA = zeros(size(M));
