@@ -19,5 +19,5 @@ Please cite this paper if you use these scripts in published work.
 
 #### Contact
 Questions? Comments? Complaints?  
-Robert Sare `[rmsare@stanford.edu](mailto:rmsare@NOSPAMstanford.edu)`  
+Robert Sare [rmsare@stanford.edu](mailto:rmsare@NOSPAMstanford.edu)  
 **[STGL](https://pangea.stanford.edu/researchgroups/tectonicgeomorph/)**
