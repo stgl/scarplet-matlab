@@ -6,7 +6,7 @@ Nothing special. These scripts work under recent versions of MATLAB; R2012a+ sho
 
 To run these scripts on new data, get a copy of your DEM in ESRI ASCII grid format and import it using the `dem2mat` utility. Convert results back to ESRI/GDAL-friendly format with `mat2dem`. The `wavelet_filtertile` function returns grids of best-fit wavelet parameters that can be exported in the same way.
 
-You can plot filter output over a hillshade with `plotscarplet` if you compute slope magnitudes and azimuths for your DEM. A generic whitening utility is also included to add noise to DEMs with areas of missing data. 
+You can plot filter output over a hillshade with `plotscarplet` if you compute slope magnitudes and azimuths for your DEM. A simple whitening utility is also included to add noise to DEMs with areas of missing data. 
 
 #### Examples
 The examples directory contains an example of filtering a synthetic DEM and an application to real-world data from the Carrizo Plain, California, USA. 
