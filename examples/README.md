@@ -7,4 +7,4 @@ This example uses a simple vertical fault scarp with morphologic age 10<sup>1</s
 #### Carrizo Plain, USA
 Original data collected by the [B4 Project](http://siovizcenter.ucsd.edu/topo/b4.php), accessed through [OpenTopography](http://www.opentopography.org/).
 
-In this oriented swath, the San Andreas Fault appears as a continuous fault scarp cross-cut by channels coming off of high topography to the northeast. The wavelet filter identifies this scarp as a high signal-to-noise feature with an approximate morphologic age of 10<sup>2.5</sup> m<sup>2</sup>. Channels are also clearly resolved.
+In this oriented swath, the San Andreas Fault appears as a continuous fault scarp cross-cut by channels coming off of high topography to the northeast. The wavelet filter identifies this scarp as a group of high signal-to-noise features with an approximate morphologic age of 10<sup>2.5</sup> m<sup>2</sup>. Channels are also clearly resolved. Masking the filter output to exclude areas of low SNR reveals the salient diffusive features in the DEM.
