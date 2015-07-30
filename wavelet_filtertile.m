@@ -1,4 +1,4 @@
-function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d, kt_lim, kt_step)
+function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d, logkt_max)
 
 %% Applies wavelet filter to DEM, returning best-fit parameters at each grid
 %% point 
@@ -21,16 +21,15 @@ sig = 0.1;
 
 if (nargin < 2)
     d = 200;
-    kt_lim = 2.5;
-    kt_step = 0.1;
 elseif (nargin < 3)
+    d = 200;
     kt_lim = 2.5;
-    kt_step = 0.1;
-elseif (nargin < 4)
     kt_step = 0.1;
 end
 
 % Grid search over orientation and ages
+kt_lim = logkt_max/sqrt(2);
+kt_step = kt_lim/5;
 l = -kt_lim:kt_step:kt_lim;
 k = 0:kt_step:kt_lim;
 [L,K] = meshgrid(l,k);
