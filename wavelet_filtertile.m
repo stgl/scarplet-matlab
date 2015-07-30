@@ -1,4 +1,4 @@
-function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d)
+function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d, kt_lim, kt_step)
 
 %% Applies wavelet filter to DEM, returning best-fit parameters at each grid
 %% point 
@@ -6,6 +6,9 @@ function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d)
 %% Minor revisions Robert Sare June 2015
 %%
 %% INPUT:       dem - dem grid struct
+%%              d - length of template scarp in out-of-plane direction
+%%              kt_lim - maximum log10(kt) for grid search
+%%              kt_step - log(kt) step size for grid search
 %%
 %% OUTPUT:      bestA - best-fit scarp amplitudes
 %%              bestKT - best-fit morphologic ages
@@ -16,13 +19,20 @@ function [A, KT, ANG, SNR] = wavelet_filtertile(dem, d)
 frac = 0.9;
 sig = 0.1;
 
-if nargin < 2
+if (nargin < 2)
     d = 200;
+    kt_lim = 2.5;
+    kt_step = 0.1;
+elseif (nargin < 3)
+    kt_lim = 2.5;
+    kt_step = 0.1;
+elseif (nargin < 4)
+    kt_step = 0.1;
 end
 
 % Grid search over orientation and ages
-l = -2.5:0.1:2.5;
-k = 0:0.1:2.5;
+l = -kt_lim:kt_step:kt_lim;
+k = 0:kt_step:kt_lim;
 [L,K] = meshgrid(l,k);
 ANG = (pi./2 - atan2(K,L)) .* 180./pi;
 LOGKT = sqrt(L.^2 + K.^2);
