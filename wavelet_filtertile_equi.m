@@ -27,8 +27,6 @@ if (nargin < 2)
 end
 
 % Equiangular search over orientation and ages
-kt_lim = logkt_max/sqrt(2);
-kt_step = kt_lim/25;
 ANG = -90:ang_step:90;
 LOGKT = 0:kt_step:kt_lim;
 
