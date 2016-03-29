@@ -21,14 +21,14 @@ frac = 0.9;
 
 if (nargin < 2)
     d = 200;
-    kt_lim = 3.5;
+    logkt_max = 3.5;
     kt_step = 0.1;
     ang_step = 10;
 end
 
 % Equiangular search over orientation and ages
 ANG = -90:ang_step:90;
-LOGKT = 0:kt_step:kt_lim;
+LOGKT = 0:kt_step:logkt_max;
 
 de = dem.de;
 M = dem.grid;
