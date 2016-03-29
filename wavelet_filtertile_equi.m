@@ -1,4 +1,4 @@
-function [A, KT, ANG, SNR] = wavelet_filtertile_equi(dem, d, logkt_max, ang_step)
+function [A, KT, ANG, SNR] = wavelet_filtertile_equi(dem, d, logkt_max, kt_step, ang_step)
 
 %% Applies wavelet filter to DEM, returning best-fit parameters at each grid
 %% point using grid search over equal-angle template orientation intervals 
