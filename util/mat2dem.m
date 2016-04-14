@@ -21,7 +21,7 @@ idx = find(isnan(dem.grid));
 dem.grid(idx) = dem.nodata;
 
 for(i = 1:1:dem.ny)
-    fprintf(fid, '%10.3f', dem.grid(i,:));
+    fprintf(fid, '%f ', dem.grid(i,:));
     fprintf(fid, '\n');
 end
 
