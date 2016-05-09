@@ -31,6 +31,6 @@ dem.grid = fscanf(fid,'%f',[dem.nx,dem.ny]);
 dem.grid = dem.grid';
 %dem.nodata = ndv; % retain NDVs; useful for ESRI compatibility
 dem.grid(dem.grid==ndv) = NaN; % set NaNs; useful for matlab processing
-dem.grid.nodata = NaN;
+dem.nodata = NaN;
 
 end
