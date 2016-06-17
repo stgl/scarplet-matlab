@@ -35,8 +35,10 @@ d = 200;
 mask = SNR >= mean(mean(SNR));
 KT.grid = log10(KT.grid);
 KT.grid(~mask) = nan;
+KT.grid(isinf(KT.grid)) = nan;
 
 mat2dem(KT, 'synthetic_logkt_200m.asc');
+plotscarplet(dem, KT, 3.5);
 
 % -----------------------------------------------------------------------------
 % Internal functions
