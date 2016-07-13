@@ -29,7 +29,7 @@ end
 
 % Grid search over orientation and ages
 kt_lim = logkt_max/sqrt(2);
-kt_step = kt_lim/25;
+kt_step = max(0.1, kt_lim/25);
 l = -kt_lim:kt_step:kt_lim;
 k = 0:kt_step:kt_lim;
 [L,K] = meshgrid(l,k);

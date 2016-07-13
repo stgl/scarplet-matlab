@@ -1,4 +1,4 @@
-function [A, KT, ANG, SNR] = wavelet_filtertile_equi(dem, d, logkt_max, kt_step, ang_step)
+function [A, KT, ANG, SNR] = wavelet_filtertile_equi(dem, d, logkt_max, kt_step,ang_step, nanidx)
 
 %% Applies wavelet filter to DEM, returning best-fit parameters at each grid
 %% point using grid search over equal-angle template orientation intervals 
@@ -47,6 +47,7 @@ for(i=1:length(LOGKT))
         [thisSNR,thisA,thiserr] = calcerror_mat_xcurv(frac,d,thisang,thiskt,de,M);
         k = find(isnan(thisSNR));
         thisSNR(k) = 0;
+        thisSNR(nanidx) = 0;
         
         % Retain parameters with maximum SNR 
         bestA = (bestSNR < thisSNR).*thisA + (bestSNR >= thisSNR).*bestA;
