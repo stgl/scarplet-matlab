@@ -1,4 +1,4 @@
-function [] = plotscarplet(dem, param)
+function [colorimage] = plotscarplet(dem, param, pmax)
 
 %% Plot hillshade and parameter overlay
 %% Robert Sare 2014
@@ -8,19 +8,21 @@ function [] = plotscarplet(dem, param)
 %% INPUT:       dem - dem in matlab grid struct
 %%              param - grid of parameters
 
-figure
 hold on
 
 % Plot hillshade (need slopemag and slopeaz to do this)
 I = ploths(dem, 315, 5);
 
 % Plot parameter grid
+
 cmap = jet(254);
 cmap = [1 1 1; cmap];
 hsv_cmap = rgb2hsv(cmap);
 
 pmin = nanmin(param.grid(:));
-pmax = nanmax(param.grid(:));
+if(pmax == 0)
+    pmax = nanmax(param.grid(:));
+end
 
 % Rescale to colormap
 colorgrid = (param.grid - pmin)./(pmax - pmin);
@@ -38,32 +40,19 @@ colorimage(:, :, 3) = I;
 colorimage = hsv2rgb(colorimage);
 
 colormap gray
-image(x, y, colorimage);
+clr = image(x, y, colorimage);
+set(clr, 'AlphaData', 0.75)
+set(gca, 'FontSize', 18);
 
-xlabel('Easting');
-ylabel('Northing');
+xlabel('Easting (m)');
+ylabel('Northing (m)');
 
 a = gca;set(a,'ydir','normal');
 axis equal;axis image;
+lim = xlim;
+ticks = linspace(lim(1)+0.25e3, lim(2)-0.25e3, 2);
 
-% -----------------------------------------------------------------------------
-% Internal functions
-function I = ploths(dem,az,elev)
-
-az = -az .* pi ./ 180;
-elev = elev .* pi ./ 180;
-
-I = cos(elev).*sin(dem.slopemag).*cos(dem.slopeaz-az) + sin(elev).*cos(dem.slopemag);
-I = (I + 1)./2 .* 255;
-
-x = (dem.xllcenter+dem.de./2):dem.de:((dem.nx).*dem.de + (dem.xllcenter-dem.de./2));
-y = (dem.yllcenter+dem.de./2):dem.de:((dem.ny).*dem.de + (dem.yllcenter-dem.de./2));
-
-colormap gray
-imagesc(x,y,I,[27 216]);
-
-I = I./255;
-
-end
+set(gca, 'XTick', ticks);
+box on
 
 end
