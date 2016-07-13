@@ -46,7 +46,6 @@ err = (1./n).*((A.^2 .* sumW2) - 2.*A.*fftshift(ifft2(fc.*fW)) + fftshift(ifft2(
 
 % Typo in paper; SNR should be unit-less
 SNR = (A.^2 .* sumW2) ./ err;
-%SNR = A.^2 ./ err;
 
 % Clip everything outside of window limits
 [X,Y] = meshgrid(x,y);
