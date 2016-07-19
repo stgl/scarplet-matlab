@@ -1,4 +1,4 @@
-function [x, y, I] = ploths(dem, az, elev, xlims, ylims)
+function I = ploths(dem, az, elev, xlims, ylims)
 
 %% ploths(dem, az, elev, xlims, ylims)
 %%
