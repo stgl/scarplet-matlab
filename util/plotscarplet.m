@@ -20,7 +20,7 @@ cmap = [1 1 1; cmap];
 hsv_cmap = rgb2hsv(cmap);
 
 pmin = nanmin(param.grid(:));
-if(pmax == 0)
+if(nargin < 3)
     pmax = nanmax(param.grid(:));
 end
 
