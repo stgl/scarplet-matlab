@@ -18,7 +18,10 @@ fprintf(fid, 'cellsize %8.3f\n', dem.de);
 fprintf(fid, 'nodata_value %10.3f\n', dem.nodata);
 
 idx = find(isnan(dem.grid));
-dem.grid(idx) = dem.nodata;
+%dem.grid(idx) = dem.nodata;
+dem.grid(idx) = -9999;
+dem.nodata = -9999;
+dem.grid = flipud(dem.grid);
 
 for(i = 1:1:dem.ny)
     fprintf(fid, '%f ', dem.grid(i,:));
