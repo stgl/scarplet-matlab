@@ -6,7 +6,7 @@ Nothing special. These scripts work under recent versions of MATLAB; R2012a+ sho
 
 To run the wavelet filter on a DEM of your choice, call the `scarplet` function in the examples folder with the path to your file.
 
-To run these scripts on new data, get a copy of your DEM in ESRI ASCII grid format and import it using the `dem2mat` utility. Convert results back to ESRI/GDAL-friendly format with `mat2dem`. The `wavelet_filtertile` function returns grids of best-fit wavelet parameters that can be exported in the same way. If you want to specify a range and step stze of template orientation angles, the slightly less efficient `wavelet_filtertile_equi` uses an equiangular grid search.
+To run these scripts interactively, get a copy of your DEM in ESRI ASCII grid format and import it using the `dem2mat` utility. Convert results back to ESRI/GDAL-friendly format with `mat2dem`. The `wavelet_filtertile` function returns grids of best-fit wavelet parameters that can be exported in the same way. If you want to specify a range and step stze of template orientation angles, the slightly less efficient `wavelet_filtertile_equi` uses an equiangular grid search.
 
 You can plot filter output over a hillshade with `plotscarplet` if you compute slope magnitudes and azimuths for your DEM. A simple whitening utility is also included to add noise to DEMs with areas of missing data. 
 
