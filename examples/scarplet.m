@@ -10,6 +10,8 @@ function [A, KT, ANG, SNR] = scarplet(dem_filename)
 %%          SNR - signal-to-noise ratio of best-fit scarp wavelet
 %%
 
+addpath('../', '../util')
+
 [dem, nanidx] = dem2mat(dem_filename);
 
 % Filter DEM at 200m template length
