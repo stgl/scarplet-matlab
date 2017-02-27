@@ -9,7 +9,8 @@ load('CarrizoDEM.mat');
 
 % Filter DEM at 200m template length
 d = 200;
-[A, KT, ANG, SNR] = wavelet_filtertile(dem, d);
+logkt_max = 3.5;
+[A, KT, ANG, SNR] = wavelet_filtertile(dem, d, logkt_max);
 
 % Plot raw results
 plotscarplet(dem, SNR);
