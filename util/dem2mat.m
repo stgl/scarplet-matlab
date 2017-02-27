@@ -1,4 +1,4 @@
-function dem = dem2mat(filename)
+function [dem, nanidx] = dem2mat(filename)
 
 %% Load ESRI ASCII DEM as MATLAB structure
 %% Robert Sare 2014
@@ -9,6 +9,8 @@ function dem = dem2mat(filename)
 
 % Define DEM structure
 dem = struct('nx', 0, 'ny', 0, 'xllcenter', 0, 'yllcenter', 0, 'de', 0, 'grid', [], 'nodata', NaN);
+
+fprintf('Reading file...\n');
 
 % Load DEM info
 fid = fopen(filename);
@@ -32,5 +34,15 @@ dem.grid = flipud(dem.grid');
 %dem.nodata = ndv; % retain NDVs; useful for ESRI compatibility
 dem.grid(dem.grid==ndv) = NaN; % set NaNs; useful for matlab processing
 dem.nodata = NaN;
+
+[dem, nanidx] = noisedem(dem);
+num_nans = sum(isnan(dem.grid(:));
+if(num_nans > 0)
+    fprintf('Filling in nodata values...\n');
+end
+while(num_nans > 0)
+    dem = noisedem(dem);
+    num_nans = sum(isnan(dem.grid(:));
+end
 
 end
