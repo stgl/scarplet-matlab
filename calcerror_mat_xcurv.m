@@ -23,7 +23,7 @@ x = x - mean(x); y = y - mean(y);
 
 % Compute curvature and create wavelet template
 c = calcprofcurv(DEM,de,gam);
-[W,M,anx,any] = wavelet_scarp(frac,d,gam,kt,x,y);
+[W,M,an_x,an_y] = wavelet_scarp(frac,d,gam,kt,x,y);
 
 i = find(W == 0);
 m = ones(size(W));
@@ -49,7 +49,7 @@ SNR = (A.^2 .* sumW2) ./ err;
 
 % Clip everything outside of window limits
 [X,Y] = meshgrid(x,y);
-i = find( (X < (min(x)+anx)) | (X > (max(x)-anx)) | (Y < (min(y) + any)) | (Y > (max(y)-any)));
+i = find( (X < (min(x)+an_x)) | (X > (max(x)-an_x)) | (Y < (min(y) + an_y)) | (Y > (max(y)-an_y)));
 SNR(i) = nan;
 A(i) = nan;
 
