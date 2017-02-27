@@ -13,7 +13,7 @@ function [dem, idx] = noisedem(dem, sig2, meanval)
 
 
 idx = find(isnan(dem.grid))';
-fprintf('DEM contains %i NaNs, (%3.2f %%)\n', length(idx), length(idx)/prod(size(dem.grid))*100);
+%fprintf('DEM contains %i NaNs, (%3.2f %%)\n', length(idx), length(idx)/prod(size(dem.grid))*100);
 
 if(nargin < 2)
     r = 10;
