@@ -1,4 +1,4 @@
-function [W,M,anx,any] = wavelet_scarp(frac,d,gam,kt,x,y)
+function [W,M,an_x,an_y] = wavelet_scarp(frac,d,gam,kt,x,y)
 
 %% Returns wavelet template for a step function degrading by simple diffusion
 %% George Hilley 2010
@@ -40,7 +40,7 @@ x4 = d.*cos(alph-pi./2);
 y4 = d.*sin(alph-pi./2);
 x1 = d.*cos(alph);
 y1 = d.*sin(alph);
-any = abs((x4 - x1) + 2.*c.*cos(alph-pi./2));
-anx = abs((y1 - y4) + 2.*c.*sin(alph-pi./2));
+an_y = abs((x4 - x1) + 2.*c.*cos(alph-pi./2));
+an_x = abs((y1 - y4) + 2.*c.*sin(alph-pi./2));
 
 end
