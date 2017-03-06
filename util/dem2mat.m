@@ -36,7 +36,7 @@ dem.grid(dem.grid==ndv) = NaN; % set NaNs; useful for matlab processing
 dem.nodata = NaN;
 
 [dem, nanidx] = noisedem(dem);
-num_nans = sum(isnan(dem.grid(:));
+num_nans = sum(isnan(dem.grid(:)));
 if(num_nans > 0)
     fprintf('Filling in nodata values...\n');
 end
