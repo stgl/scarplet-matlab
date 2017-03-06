@@ -42,7 +42,7 @@ if(num_nans > 0)
 end
 while(num_nans > 0)
     dem = noisedem(dem);
-    num_nans = sum(isnan(dem.grid(:));
+    num_nans = sum(isnan(dem.grid(:)));
 end
 
 end
