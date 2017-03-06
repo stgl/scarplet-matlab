@@ -37,7 +37,7 @@ KT.grid(~mask) = nan;
 plotscarplet(dem, KT);
 
 % Save as ESRI ASCII files
-mat2dem(SNR, 'carrizo_SNR_200m.asc');
-mat2dem(KT, 'carrizo_logkt_200m.asc');
+mat2dem(SNR, 'example_SNR_200m.asc');
+mat2dem(KT, 'example_logkt_200m.asc');
 
 end
