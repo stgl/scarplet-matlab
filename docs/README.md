@@ -1,3 +1,3 @@
-# Scarplet: template-based detection of fault scarps in ALSM data
+# Scarplet: template matching of fault scarps in ALSM data
 
 ...
