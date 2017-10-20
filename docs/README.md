@@ -10,4 +10,4 @@ An actively developed, freely available Python application will be hosted at [sc
 
 A set of GIS layers covering the northern and southern San Andreas fault zone -- from Eureka to the Salton Sea -- will be publicly available soon. Files will be available in GeoTIFF or ESRI grid format.
 
-These data products are derived from the OpenTopography lidar data holdings, specifically the the EarthScope Northern California and Southern San Andreas datasets and the B4 Project dataset. They were produced as part of a National Earthquake Hazards Reduction Program project, under award number G17AP00010.
+These data products are derived from the OpenTopography lidar data holdings, specifically the the [EarthScope Northern California](http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.052008.32610.1) and [Southern San Andreas datasets](http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.122009.32611.1) and the [B4 Project dataset](http://opentopo.sdsc.edu/datasetMetadata?otCollectionID=OT.032006.32611.1). Overlay maps are being produced as part of a National Earthquake Hazards Reduction Program project, under award number G17AP00010.
