@@ -2,7 +2,7 @@
 
 ## Scarp-like landforms along the Pacific-North America plate boundary
 
-A set of GIS layers covering the northern and southern San Andreas fault zones -- from Mendocino to the Salton Sea -- will be publicly available soon. These show the amplitude, morphologic age, orientation, and signal-to-noise ratio for scarp-like features found in sigital elevation models derived from airborne lidar data. Files will be available in GeoTIFF or ESRI grid format.
+A set of GIS layers covering the northern and southern San Andreas fault zones -- from Mendocino to the Salton Sea -- will be publicly available soon. These show the amplitude (height), morphologic age (smoothness), orientation, and signal-to-noise ratio for scarp-like features. Files will be available in GeoTIFF or ESRI grid format.
 
 ## Check it out now!
 
@@ -23,7 +23,7 @@ Want to know when the full set of derivative products is released? [Sign up](htt
 
 ## Whats's next
 
-A Python implementation and an AWS-based distributed template matching framework will be available in [scarplet-python](https://github.com/rmsare/scarplet-python) and [scarp-reduce](https://github.com/rmsare/scarp-reduce) repositories.
+A Python implementation and an AWS EC2-based distributed template matching framework will be available in [scarplet-python](https://github.com/rmsare/scarplet-python) and [scarp-reduce](https://github.com/rmsare/scarp-reduce) repositories.
 
 Please contact [Robert Sare](rmsare@NOSPAMstanford.edu) with any questions.
 
