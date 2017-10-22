@@ -2,7 +2,13 @@
 
 ## Check it out now!
 
+Click the images below for results from the North Coast segment of the **San Andreas Fault**, **Rodgers Creek Fault**, and the **Green Valley Fault**.
 
+![nsaf](https://github.com/stgl/scarplet/docs/img/nsaf.png "Northern San Andreas Fault")
+
+![rodgerscreek](https://github.com/stgl/scarplet/docs/img/rodgerscreek.png "Rodgers Creek Fault")
+
+![greenvalley](https://github.com/stgl/scarplet/docs/img/greenvalley.png "Green Valley Fault")
 
 ## Sign up for an announcement
 
