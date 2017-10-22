@@ -1,4 +1,10 @@
-**scarplet** is a set of tools for detecting scarp-like features in digital topographic data. This repository hosts a proof-of-concept Matlab implementation of the fault scarp template matching algorithm. 
+**scarplet** is a set of tools for detecting scarp-like features in digital topographic data. This repository hosts a proof-of-concept Matlab implementation of the fault scarp template matching algorithm.
+
+## Scarp overlays for the Pacific-North America plate boundary
+
+A set of GIS layers covering the northern and southern San Andreas fault zones -- from Mendocino to the Salton Sea -- will be publicly available soon. Files will be available in GeoTIFF or ESRI grid format.
+
+An actively developed, freely available Python application will be hosted at [scarplet-python](https://github.com/rmsare/scarplet-python). The distributed template matching framework builds on this codebase, and will be available in the [scarp-reduce repository](https://github.com/rmsare/scarp-reduce).
 
 ## Check it out now!
 
@@ -17,11 +23,6 @@ Click the images below for scarp-like features detected along the North Coast se
 
 Want to know when the full set of derivative products is released? [Sign up](http://eepurl.com/c8w3E1) to receive an email announcement when it's available.
 
-## Scarp overlays for the Pacific-North America plate boundary
-
-A set of GIS layers covering the northern and southern San Andreas fault zones -- from Eureka to the Salton Sea -- will be publicly available soon. Files will be available in GeoTIFF or ESRI grid format.
-
-An actively developed, freely available Python application will be hosted at [scarplet-python](https://github.com/rmsare/scarplet-python). The distributed template matching framework builds on this codebase, and will be available in the [scarp-reduce repository](https://github.com/rmsare/scarp-reduce).
 
 ## Acknowledgements and contact
 
