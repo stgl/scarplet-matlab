@@ -2,18 +2,20 @@
 
 ## Check it out now!
 
-Click the images below for results from the North Coast segment of the **San Andreas Fault**, **Rodgers Creek Fault**, and the **Green Valley Fault**.
+Click the images below for scarp-like features detected along the North Coast segment of the **San Andreas Fault**, **Rodgers Creek Fault**, and the **Green Valley Fault**.
 
+### North Coast
 ![nsaf](https://github.com/stgl/scarplet/raw/master/docs/img/nsaf.png "Northern San Andreas Fault")
 
+### Rodgers Creek
 ![rodgerscreek](https://github.com/stgl/scarplet/raw/master/docs/img/rodgerscreek.png "Rodgers Creek Fault")
 
+### Green Valley
 ![greenvalley](https://github.com/stgl/scarplet/raw/master/docs/img/greenvalley.png "Green Valley Fault")
 
 ## Sign up for an announcement
 
 Want to know when the full set of derivative products is released? [Sign up](http://eepurl.com/c8w3E1) to receive an email announcement when it's available.
-
 
 ## Scarp overlays for the Pacific-North America plate boundary
 
