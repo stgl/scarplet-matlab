@@ -6,7 +6,7 @@ A set of GIS layers covering the northern and southern San Andreas fault zones -
 
 ## Check it out now!
 
-Click the images below to see scarp-like features detected along the North Coast segment of the **San Andreas Fault**, the **Rodgers Creek Fault**, and the **Green Valley Fault**.
+Click the images below to see scarp-like features detected along the North Coast segment of the **San Andreas Fault**, the **Rodgers Creek Fault**, and the **Green Valley Fault**. (Warning: large files.)
 
 ### North Coast
 ![nsaf](https://github.com/stgl/scarplet/raw/master/docs/img/nsaf.png "Northern San Andreas Fault")
