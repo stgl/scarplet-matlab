@@ -1,3 +1,5 @@
+**Check out the [main page for the scarplet project](http://stgl.github.io/scarplet/)**
+
 ## scarplet
 Scripts for detecting scarp-like features in airborne laser swath mapping (ALSM) data using wavelet analysis.
 
