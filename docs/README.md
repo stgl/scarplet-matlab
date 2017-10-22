@@ -4,6 +4,8 @@
 
 A set of GIS layers covering the northern and southern San Andreas fault zones -- from Mendocino to the Salton Sea -- will be publicly available soon. These show the amplitude (height), morphologic age (smoothness), orientation, and signal-to-noise ratio for scarp-like features. Files will be available in GeoTIFF or ESRI grid format.
 
+Want to know when the full set of derivative products is released? [Sign up](http://eepurl.com/c8w3E1) to receive an email announcement when it's available.
+
 ## Check it out now!
 
 Click the images below to see scarp-like features detected along the North Coast segment of the **San Andreas Fault**, the **Rodgers Creek Fault**, and the **Green Valley Fault**. (Warning: large files.)
@@ -16,10 +18,6 @@ Click the images below to see scarp-like features detected along the North Coast
 
 ### Green Valley
 ![greenvalley](https://github.com/stgl/scarplet/raw/master/docs/img/greenvalley.png "Green Valley Fault")
-
-## Sign up for an announcement
-
-Want to know when the full set of derivative products is released? [Sign up](http://eepurl.com/c8w3E1) to receive an email announcement when it's available.
 
 ## Whats's next
 
