@@ -1,5 +1,10 @@
-**Check out the [main page for the scarplet project](http://stgl.github.io/scarplet/)**
+**This repo is replaced by the scarplet Python package:**
 
+[Documentation](http://scarplet.readthedocs.io)
+
+[GitHub repo](https://github.com/rmsare/scarplet)
+
+<!---
 ## scarplet
 Scripts for detecting scarp-like features in airborne laser swath mapping (ALSM) data using wavelet analysis.
 
@@ -27,3 +32,4 @@ Work on this repository and related template matching projects has been supporte
 Questions? Comments? Complaints?  
 Robert Sare [rmsare@stanford.edu](mailto:rmsare@NOSPAMstanford.edu)  
 **[STGL](https://pangea.stanford.edu/researchgroups/tectonicgeomorph/)**
+--->
